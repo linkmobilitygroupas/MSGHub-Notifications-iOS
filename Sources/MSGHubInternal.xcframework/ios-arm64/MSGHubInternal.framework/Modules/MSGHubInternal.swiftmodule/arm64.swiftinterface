@@ -1,0 +1,34 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MSGHubInternal
+import Foundation
+@_exported import MSGHubInternal
+import Swift
+import _Concurrency
+@objc @_inheritsConvenienceInitializers open class MSGHubInternalData : ObjectiveC.NSObject {
+  public static let INSANCE: MSGHubInternal.MSGHubInternalData
+  @objc override dynamic public init()
+  final public let IOS_ID: Swift.String
+  final public let dlr_endpoint: Swift.String
+  final public let register_device_endpoing: Swift.String
+  final public let uuid_delimiter: Swift.String
+  final public let key_bundle_id: Swift.String
+  final public let key_uid: Swift.String
+  final public let json_key_token: Swift.String
+  final public let json_key_package: Swift.String
+  final public let json_key_model: Swift.String
+  final public let json_key_os: Swift.String
+  final public let json_key_vc: Swift.String
+  final public let header_key_tera: Swift.String
+  final public let auth_token: Swift.String
+  final public let json_key_status: Swift.String
+  final public let json_key_ts: Swift.String
+  final public let json_key_message_id: Swift.String
+  final public let json_key_uid: Swift.String
+  final public let fcm_token: Swift.String
+  final public let token: Swift.String
+  final public let redirect_url: Swift.String
+  final public let msghub_notif_id: Swift.String
+  final public let ios: Swift.String
+  @objc deinit
+}

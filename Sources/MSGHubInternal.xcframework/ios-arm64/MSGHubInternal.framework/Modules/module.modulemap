@@ -1,0 +1,11 @@
+framework module MSGHubInternal {
+  umbrella header "MSGHubInternal.h"
+
+  export *
+  module * { export * }
+}
+
+module MSGHubInternal.Swift {
+    header "MSGHubInternal-Swift.h"
+    requires objc
+}
