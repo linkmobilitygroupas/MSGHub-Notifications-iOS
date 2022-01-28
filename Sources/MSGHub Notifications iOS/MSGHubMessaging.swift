@@ -89,7 +89,9 @@ open class MSGHubMessaging: NSObject, MessagingDelegate, UNUserNotificationCente
                     return
                 }
                 
-                UIApplication.shared.open(url)
+                if shouldOpenUrlExternal() {
+                    UIApplication.shared.open(url)
+                }
                 
             }
             
@@ -216,6 +218,17 @@ open class MSGHubMessaging: NSObject, MessagingDelegate, UNUserNotificationCente
             }
     }
     
+    public func setOpenUrlExternal(openExternal: Bool) {
+        self.putBoolean(key: "open_external", value: openExternal)
+    }
+    
+    private func shouldOpenUrlExternal() -> Bool {
+        if self.getBoolean(key: "open_external") == nil {
+            return false
+        }
+        return self.getBoolean(key: "open_external")!
+    }
+    
     private func getValue(key: String) -> String? {
         let preferences = UserDefaults.standard
         if preferences.string(forKey: key) == nil {
@@ -228,6 +241,16 @@ open class MSGHubMessaging: NSObject, MessagingDelegate, UNUserNotificationCente
     private func putValue(key: String, value: String) {
         let preferences = UserDefaults.standard
         preferences.set(value, forKey: key)
+    }
+    
+    private func putBoolean(key: String, value: Bool?) {
+        let preferences = UserDefaults.standard
+        preferences.set(value, forKey: key)
+    }
+    
+    private func getBoolean(key: String) -> Bool? {
+        let preferences = UserDefaults.standard
+        return preferences.bool(forKey: key) == false ? false : preferences.bool(forKey: key)
     }
     
 }
