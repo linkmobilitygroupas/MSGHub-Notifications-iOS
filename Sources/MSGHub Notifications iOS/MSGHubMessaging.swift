@@ -114,7 +114,8 @@ open class MSGHubMessaging: NSObject, MessagingDelegate, UNUserNotificationCente
         subscribe(toTopic: getDeviceUUID())
     }
     
-    private func subscribe(toTopic: String) {
+    public func subscribe(toTopic: String) {
+        if (toTopic.isEmpty) {return}
         Messaging.messaging().subscribe(toTopic: toTopic) { error in
             self.registerForRemoteNotifications()
         }
