@@ -121,7 +121,8 @@ open class MSGHubMessaging: NSObject, MessagingDelegate, UNUserNotificationCente
         }
     }
     
-    private func unsubscribe(fromTopic: String) {
+    public func unsubscribe(fromTopic: String) {
+        if (fromTopic.isEmpty) {return}
         Messaging.messaging().unsubscribe(fromTopic: fromTopic) { error in
             self.registerForRemoteNotifications()
         }
