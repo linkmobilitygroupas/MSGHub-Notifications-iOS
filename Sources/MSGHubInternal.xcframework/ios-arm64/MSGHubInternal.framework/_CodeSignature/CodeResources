@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MSGHubInternal-Swift.h</key>
 		<data>
-		YIkIo1IhB0ZDS+0y9i4QFx39/kk=
+		bnOz8PWAsiNHkSx+WzrTkan+5Xw=
 		</data>
 		<key>Headers/MSGHubInternal.h</key>
 		<data>
@@ -14,31 +14,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ykN46C3uLQKanDG6UnOIrkB6SAo=
+		PV2+J6Fqg47wKbxgv0N/7PqqQXU=
 		</data>
 		<key>Modules/MSGHubInternal.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		kwhOkgo4iIe+Eqi3eF2AtxVIN2E=
+		+Zsf3wV5aR10F84W7kRdOBn/tlI=
 		</data>
 		<key>Modules/MSGHubInternal.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ECM1BgduD8MwKkFS8EUp0MLWilQ=
+		zgOQJ1vIbru2jWRxFGWilovbsKU=
 		</data>
 		<key>Modules/MSGHubInternal.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		BiXwiBCh93YFFUH1/cUPWnHCfcM=
-		</data>
-		<key>Modules/MSGHubInternal.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		kwhOkgo4iIe+Eqi3eF2AtxVIN2E=
-		</data>
-		<key>Modules/MSGHubInternal.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		ECM1BgduD8MwKkFS8EUp0MLWilQ=
-		</data>
-		<key>Modules/MSGHubInternal.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		BiXwiBCh93YFFUH1/cUPWnHCfcM=
+		CjgXEvpwTl6qjlcVDb6NnPCruB0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,7 +39,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JIv4fegFqcp+gVMpL/LNqPFycRucKtemzje1jOhq62k=
+			euTTB3dDWb0gyY8LC5UQw95yZiuhoj5M06kI/oK52bQ=
 			</data>
 		</dict>
 		<key>Headers/MSGHubInternal.h</key>
@@ -65,42 +53,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			A3io9YXS3YVDcuiNU9bwv7PjGsPrNlAM/z7hrTt8bcY=
+			Bu9ETiEHLhXc6A1tWpQAtMew5bUcTbJMH2TlP9DRIAs=
 			</data>
 		</dict>
 		<key>Modules/MSGHubInternal.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tl9H/SktBkhEQrgHYIP4lT1aMFzjj/h9GLwY1lRcSMk=
+			FbI2DWPa5oRPA+r+nnLsApfjfyDb28rM3XxIsjXOJkI=
 			</data>
 		</dict>
 		<key>Modules/MSGHubInternal.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EG5YDFF8lKzMHYOQbkYWJSB6t0blW+vZayd3uk255oo=
-			</data>
-		</dict>
-		<key>Modules/MSGHubInternal.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			A3io9YXS3YVDcuiNU9bwv7PjGsPrNlAM/z7hrTt8bcY=
-			</data>
-		</dict>
-		<key>Modules/MSGHubInternal.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tl9H/SktBkhEQrgHYIP4lT1aMFzjj/h9GLwY1lRcSMk=
-			</data>
-		</dict>
-		<key>Modules/MSGHubInternal.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EG5YDFF8lKzMHYOQbkYWJSB6t0blW+vZayd3uk255oo=
+			O/bfT1kATxTg3xs/tUKDqHYAzwHGpvIfMkgJt2UJq8M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

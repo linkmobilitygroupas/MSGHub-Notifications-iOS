@@ -14,7 +14,11 @@ let package = Package(
             targets: ["MSGHub Notifications iOS", "MSGHubInternal"]),
     ],
     dependencies: [
-        .package(name: "Firebase", url: "https://github.com/firebase/firebase-ios-sdk.git", branch: "master"),
+        .package(
+           name: "Firebase",
+           url: "https://github.com/firebase/firebase-ios-sdk.git",
+           .upToNextMajor(from: "8.10.0")
+         ),
         .package(name: "Alamofire",url: "https://github.com/Alamofire/Alamofire.git", branch: "master"),
         .package(url: "https://github.com/devicekit/DeviceKit.git", from: "4.0.0"),
     ],
