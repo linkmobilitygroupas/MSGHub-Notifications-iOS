@@ -21,7 +21,7 @@ open class MSGHubMessaging: NSObject, MessagingDelegate, UNUserNotificationCente
     public static let INSTANCE = MSGHubMessaging()
     private let msgHubInternal = MSGHubInternalData.INSANCE
     var bundleId: String = ""
-    private weak var redirectProtocol: RedirectProtocol?
+    public weak var redirectProtocol: RedirectProtocol?
     
     public override init() {
     }
