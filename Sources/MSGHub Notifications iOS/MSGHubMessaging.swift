@@ -21,6 +21,7 @@ open class MSGHubMessaging: NSObject, MessagingDelegate, UNUserNotificationCente
     public static let INSTANCE = MSGHubMessaging()
     private let msgHubInternal = MSGHubInternalData.INSANCE
     var bundleId: String = ""
+    private weak var redirectProtocol: RedirectProtocol?
     
     public override init() {
     }
@@ -91,6 +92,8 @@ open class MSGHubMessaging: NSObject, MessagingDelegate, UNUserNotificationCente
                 
                 if shouldOpenUrlExternal() {
                     UIApplication.shared.open(url)
+                } else {
+                    self.redirectProtocol?.onExternalNotificationUrl(url: url)
                 }
                 
             }
@@ -255,4 +258,8 @@ open class MSGHubMessaging: NSObject, MessagingDelegate, UNUserNotificationCente
         return preferences.bool(forKey: key) == false ? false : preferences.bool(forKey: key)
     }
     
+}
+
+public protocol RedirectProtocol : NSObjectProtocol {
+    func onExternalNotificationUrl(url: URL)
 }
