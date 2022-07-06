@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MSGHubInternal-Swift.h</key>
 		<data>
-		z2f+47ZeCD4wjygzQZUk9nnS7sw=
+		tBMdwVonDw9UcLCiYMLA9hQjDxc=
 		</data>
 		<key>Headers/MSGHubInternal.h</key>
 		<data>
@@ -14,19 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2ykfWGsylLg1N3JwDL4irn9Ruww=
+		cNcbeNRmsj8U+SBdnMYTbA2HTkc=
 		</data>
-		<key>Modules/MSGHubInternal.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<key>Modules/MSGHubInternal.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		r52tKpZ8njftC4hPxtpdg6XRJ8E=
+		Vt9Mfs2q2sWVknYkEIGeQ+Ej+k8=
 		</data>
-		<key>Modules/MSGHubInternal.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<key>Modules/MSGHubInternal.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		0wREI4qTn4JB52Zqk7ZyHd9Jfuk=
+		B/aNs6feyM66HBLpSGHgzRgCaLM=
 		</data>
-		<key>Modules/MSGHubInternal.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<key>Modules/MSGHubInternal.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vaqGd/hURkZTKBHaj/KpmKdss/4=
+		JDwL2PXa6s0hdx8stG3EpmG/GW0=
+		</data>
+		<key>Modules/MSGHubInternal.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		lzwvu4GWS5Iioy8bn/+6fGL5VC8=
+		</data>
+		<key>Modules/MSGHubInternal.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		a16m1dnIPj9JhEPy/TRrf1rKvzs=
+		</data>
+		<key>Modules/MSGHubInternal.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		dDPmrUgrePQjYkxVcGJxoC6BVCc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -39,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			73nLd1m5tBqGYfqJGSf2I1L0sgeth3dOoQXU7ntmv8U=
+			gfdikd6Rd1uyk02N7JzwyrGacF+2fC1wdWvxpwG7LIc=
 			</data>
 		</dict>
 		<key>Headers/MSGHubInternal.h</key>
@@ -49,25 +61,46 @@
 			JePkecOTry1ITqHkXoJrvL3o5Jdc7sOI1JvKtiIX2a4=
 			</data>
 		</dict>
-		<key>Modules/MSGHubInternal.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<key>Modules/MSGHubInternal.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Itc/cSC1u0wqCml9q+1CFVBY4rqAC18QXQZNkjEa1q4=
+			eCDQRHVBZRlVKOgXM9xxIAWUEqG8USzUJhtQDZtSbT0=
 			</data>
 		</dict>
-		<key>Modules/MSGHubInternal.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<key>Modules/MSGHubInternal.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HyYkRUdL+nr83IU2RKMLGqYKDKh6wGpmMPSZspN4hKw=
+			WfAfE4A/clq67Kp773CMD64JvA1xfzIlHs1670pN4fw=
 			</data>
 		</dict>
-		<key>Modules/MSGHubInternal.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<key>Modules/MSGHubInternal.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5wvx7T+EcGTbMDMuLkR03vJ8DrJX8rdCf36LxdCYcW4=
+			ZBjiEcXb7RqLZg/XjSXTNHqWO29lOv6Gopt8BSEKfi8=
+			</data>
+		</dict>
+		<key>Modules/MSGHubInternal.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qmAII87ArUgIy/rVABZ1xRP2WzJMK9PH8yL33y+C4vE=
+			</data>
+		</dict>
+		<key>Modules/MSGHubInternal.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AT2isNgOzabN66o1sVgxlhv/Rz77OS98uyR4JLjp3z4=
+			</data>
+		</dict>
+		<key>Modules/MSGHubInternal.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9n4ZRYvUjGhv+c1t9/gxQZF8InkIy+0YWc55AnU0xsk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
