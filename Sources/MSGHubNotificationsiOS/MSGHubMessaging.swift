@@ -101,7 +101,7 @@ open class MSGHubMessaging: NSObject, MessagingDelegate, UNUserNotificationCente
         }
         
         if response.actionIdentifier == UNNotificationDismissActionIdentifier {
-            // notification dissmissed (not tested properly)
+            // notification dissmissed (no adequate results from testing)
         }
         
         print(response)
