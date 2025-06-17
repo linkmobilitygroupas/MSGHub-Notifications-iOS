@@ -1,0 +1,1417 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "MSGHubInternal",
+    "printedName": "MSGHubInternal",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MSGHubInternal",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MSGHubInternalData",
+        "printedName": "MSGHubInternalData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "INSANCE",
+            "printedName": "INSANCE",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MSGHubInternalData",
+                "printedName": "MSGHubInternal.MSGHubInternalData",
+                "usr": "c:@M@MSGHubInternal@objc(cs)MSGHubInternalData"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MSGHubInternal0aB4DataC7INSANCEACvpZ",
+            "mangledName": "$s14MSGHubInternal0aB4DataC7INSANCEACvpZ",
+            "moduleName": "MSGHubInternal",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MSGHubInternalData",
+                    "printedName": "MSGHubInternal.MSGHubInternalData",
+                    "usr": "c:@M@MSGHubInternal@objc(cs)MSGHubInternalData"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MSGHubInternal0aB4DataC7INSANCEACvgZ",
+                "mangledName": "$s14MSGHubInternal0aB4DataC7INSANCEACvgZ",
+                "moduleName": "MSGHubInternal",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MSGHubInternalData",
+                "printedName": "MSGHubInternal.MSGHubInternalData",
+                "usr": "c:@M@MSGHubInternal@objc(cs)MSGHubInternalData"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MSGHubInternal@objc(cs)MSGHubInternalData(im)init",
+            "mangledName": "$s14MSGHubInternal0aB4DataCACycfc",
+            "moduleName": "MSGHubInternal",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "IOS_ID",
+            "printedName": "IOS_ID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MSGHubInternal0aB4DataC6IOS_IDSSvp",
+            "mangledName": "$s14MSGHubInternal0aB4DataC6IOS_IDSSvp",
+            "moduleName": "MSGHubInternal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MSGHubInternal0aB4DataC6IOS_IDSSvg",
+                "mangledName": "$s14MSGHubInternal0aB4DataC6IOS_IDSSvg",
+                "moduleName": "MSGHubInternal",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dlr_endpoint",
+            "printedName": "dlr_endpoint",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MSGHubInternal0aB4DataC12dlr_endpointSSvp",
+            "mangledName": "$s14MSGHubInternal0aB4DataC12dlr_endpointSSvp",
+            "moduleName": "MSGHubInternal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MSGHubInternal0aB4DataC12dlr_endpointSSvg",
+                "mangledName": "$s14MSGHubInternal0aB4DataC12dlr_endpointSSvg",
+                "moduleName": "MSGHubInternal",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "register_device_endpoing",
+            "printedName": "register_device_endpoing",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MSGHubInternal0aB4DataC24register_device_endpoingSSvp",
+            "mangledName": "$s14MSGHubInternal0aB4DataC24register_device_endpoingSSvp",
+            "moduleName": "MSGHubInternal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MSGHubInternal0aB4DataC24register_device_endpoingSSvg",
+                "mangledName": "$s14MSGHubInternal0aB4DataC24register_device_endpoingSSvg",
+                "moduleName": "MSGHubInternal",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "uuid_delimiter",
+            "printedName": "uuid_delimiter",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MSGHubInternal0aB4DataC14uuid_delimiterSSvp",
+            "mangledName": "$s14MSGHubInternal0aB4DataC14uuid_delimiterSSvp",
+            "moduleName": "MSGHubInternal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MSGHubInternal0aB4DataC14uuid_delimiterSSvg",
+                "mangledName": "$s14MSGHubInternal0aB4DataC14uuid_delimiterSSvg",
+                "moduleName": "MSGHubInternal",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "key_bundle_id",
+            "printedName": "key_bundle_id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MSGHubInternal0aB4DataC13key_bundle_idSSvp",
+            "mangledName": "$s14MSGHubInternal0aB4DataC13key_bundle_idSSvp",
+            "moduleName": "MSGHubInternal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MSGHubInternal0aB4DataC13key_bundle_idSSvg",
+                "mangledName": "$s14MSGHubInternal0aB4DataC13key_bundle_idSSvg",
+                "moduleName": "MSGHubInternal",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "key_uid",
+            "printedName": "key_uid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MSGHubInternal0aB4DataC7key_uidSSvp",
+            "mangledName": "$s14MSGHubInternal0aB4DataC7key_uidSSvp",
+            "moduleName": "MSGHubInternal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MSGHubInternal0aB4DataC7key_uidSSvg",
+                "mangledName": "$s14MSGHubInternal0aB4DataC7key_uidSSvg",
+                "moduleName": "MSGHubInternal",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "json_key_token",
+            "printedName": "json_key_token",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MSGHubInternal0aB4DataC14json_key_tokenSSvp",
+            "mangledName": "$s14MSGHubInternal0aB4DataC14json_key_tokenSSvp",
+            "moduleName": "MSGHubInternal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MSGHubInternal0aB4DataC14json_key_tokenSSvg",
+                "mangledName": "$s14MSGHubInternal0aB4DataC14json_key_tokenSSvg",
+                "moduleName": "MSGHubInternal",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "json_key_package",
+            "printedName": "json_key_package",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MSGHubInternal0aB4DataC16json_key_packageSSvp",
+            "mangledName": "$s14MSGHubInternal0aB4DataC16json_key_packageSSvp",
+            "moduleName": "MSGHubInternal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MSGHubInternal0aB4DataC16json_key_packageSSvg",
+                "mangledName": "$s14MSGHubInternal0aB4DataC16json_key_packageSSvg",
+                "moduleName": "MSGHubInternal",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "json_key_model",
+            "printedName": "json_key_model",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MSGHubInternal0aB4DataC14json_key_modelSSvp",
+            "mangledName": "$s14MSGHubInternal0aB4DataC14json_key_modelSSvp",
+            "moduleName": "MSGHubInternal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MSGHubInternal0aB4DataC14json_key_modelSSvg",
+                "mangledName": "$s14MSGHubInternal0aB4DataC14json_key_modelSSvg",
+                "moduleName": "MSGHubInternal",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "json_key_os",
+            "printedName": "json_key_os",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MSGHubInternal0aB4DataC11json_key_osSSvp",
+            "mangledName": "$s14MSGHubInternal0aB4DataC11json_key_osSSvp",
+            "moduleName": "MSGHubInternal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MSGHubInternal0aB4DataC11json_key_osSSvg",
+                "mangledName": "$s14MSGHubInternal0aB4DataC11json_key_osSSvg",
+                "moduleName": "MSGHubInternal",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "json_key_vc",
+            "printedName": "json_key_vc",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MSGHubInternal0aB4DataC11json_key_vcSSvp",
+            "mangledName": "$s14MSGHubInternal0aB4DataC11json_key_vcSSvp",
+            "moduleName": "MSGHubInternal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MSGHubInternal0aB4DataC11json_key_vcSSvg",
+                "mangledName": "$s14MSGHubInternal0aB4DataC11json_key_vcSSvg",
+                "moduleName": "MSGHubInternal",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "header_key_tera",
+            "printedName": "header_key_tera",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MSGHubInternal0aB4DataC15header_key_teraSSvp",
+            "mangledName": "$s14MSGHubInternal0aB4DataC15header_key_teraSSvp",
+            "moduleName": "MSGHubInternal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MSGHubInternal0aB4DataC15header_key_teraSSvg",
+                "mangledName": "$s14MSGHubInternal0aB4DataC15header_key_teraSSvg",
+                "moduleName": "MSGHubInternal",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "auth_token",
+            "printedName": "auth_token",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MSGHubInternal0aB4DataC10auth_tokenSSvp",
+            "mangledName": "$s14MSGHubInternal0aB4DataC10auth_tokenSSvp",
+            "moduleName": "MSGHubInternal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MSGHubInternal0aB4DataC10auth_tokenSSvg",
+                "mangledName": "$s14MSGHubInternal0aB4DataC10auth_tokenSSvg",
+                "moduleName": "MSGHubInternal",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "json_key_status",
+            "printedName": "json_key_status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MSGHubInternal0aB4DataC15json_key_statusSSvp",
+            "mangledName": "$s14MSGHubInternal0aB4DataC15json_key_statusSSvp",
+            "moduleName": "MSGHubInternal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MSGHubInternal0aB4DataC15json_key_statusSSvg",
+                "mangledName": "$s14MSGHubInternal0aB4DataC15json_key_statusSSvg",
+                "moduleName": "MSGHubInternal",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "json_key_ts",
+            "printedName": "json_key_ts",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MSGHubInternal0aB4DataC11json_key_tsSSvp",
+            "mangledName": "$s14MSGHubInternal0aB4DataC11json_key_tsSSvp",
+            "moduleName": "MSGHubInternal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MSGHubInternal0aB4DataC11json_key_tsSSvg",
+                "mangledName": "$s14MSGHubInternal0aB4DataC11json_key_tsSSvg",
+                "moduleName": "MSGHubInternal",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "json_key_message_id",
+            "printedName": "json_key_message_id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MSGHubInternal0aB4DataC19json_key_message_idSSvp",
+            "mangledName": "$s14MSGHubInternal0aB4DataC19json_key_message_idSSvp",
+            "moduleName": "MSGHubInternal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MSGHubInternal0aB4DataC19json_key_message_idSSvg",
+                "mangledName": "$s14MSGHubInternal0aB4DataC19json_key_message_idSSvg",
+                "moduleName": "MSGHubInternal",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "json_key_uid",
+            "printedName": "json_key_uid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MSGHubInternal0aB4DataC12json_key_uidSSvp",
+            "mangledName": "$s14MSGHubInternal0aB4DataC12json_key_uidSSvp",
+            "moduleName": "MSGHubInternal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MSGHubInternal0aB4DataC12json_key_uidSSvg",
+                "mangledName": "$s14MSGHubInternal0aB4DataC12json_key_uidSSvg",
+                "moduleName": "MSGHubInternal",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fcm_token",
+            "printedName": "fcm_token",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MSGHubInternal0aB4DataC9fcm_tokenSSvp",
+            "mangledName": "$s14MSGHubInternal0aB4DataC9fcm_tokenSSvp",
+            "moduleName": "MSGHubInternal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MSGHubInternal0aB4DataC9fcm_tokenSSvg",
+                "mangledName": "$s14MSGHubInternal0aB4DataC9fcm_tokenSSvg",
+                "moduleName": "MSGHubInternal",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "token",
+            "printedName": "token",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MSGHubInternal0aB4DataC5tokenSSvp",
+            "mangledName": "$s14MSGHubInternal0aB4DataC5tokenSSvp",
+            "moduleName": "MSGHubInternal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MSGHubInternal0aB4DataC5tokenSSvg",
+                "mangledName": "$s14MSGHubInternal0aB4DataC5tokenSSvg",
+                "moduleName": "MSGHubInternal",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "redirect_url",
+            "printedName": "redirect_url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MSGHubInternal0aB4DataC12redirect_urlSSvp",
+            "mangledName": "$s14MSGHubInternal0aB4DataC12redirect_urlSSvp",
+            "moduleName": "MSGHubInternal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MSGHubInternal0aB4DataC12redirect_urlSSvg",
+                "mangledName": "$s14MSGHubInternal0aB4DataC12redirect_urlSSvg",
+                "moduleName": "MSGHubInternal",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "msghub_notif_id",
+            "printedName": "msghub_notif_id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MSGHubInternal0aB4DataC15msghub_notif_idSSvp",
+            "mangledName": "$s14MSGHubInternal0aB4DataC15msghub_notif_idSSvp",
+            "moduleName": "MSGHubInternal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MSGHubInternal0aB4DataC15msghub_notif_idSSvg",
+                "mangledName": "$s14MSGHubInternal0aB4DataC15msghub_notif_idSSvg",
+                "moduleName": "MSGHubInternal",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ios",
+            "printedName": "ios",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MSGHubInternal0aB4DataC3iosSSvp",
+            "mangledName": "$s14MSGHubInternal0aB4DataC3iosSSvp",
+            "moduleName": "MSGHubInternal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MSGHubInternal0aB4DataC3iosSSvg",
+                "mangledName": "$s14MSGHubInternal0aB4DataC3iosSSvg",
+                "moduleName": "MSGHubInternal",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MSGHubInternal@objc(cs)MSGHubInternalData",
+        "mangledName": "$s14MSGHubInternal0aB4DataC",
+        "moduleName": "MSGHubInternal",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/pavelpavlov\/XCodeProjects\/MSGHubInternal\/MSGHubInternal\/MSGHubIntenalData.swift",
+      "kind": "StringLiteral",
+      "offset": 286,
+      "length": 6,
+      "value": "\".ios\""
+    },
+    {
+      "filePath": "\/Users\/pavelpavlov\/XCodeProjects\/MSGHubInternal\/MSGHubInternal\/MSGHubIntenalData.swift",
+      "kind": "StringLiteral",
+      "offset": 328,
+      "length": 36,
+      "value": "\"https:\/\/pushdlr.teracomm.bg\/v1\/dlr\""
+    },
+    {
+      "filePath": "\/Users\/pavelpavlov\/XCodeProjects\/MSGHubInternal\/MSGHubInternal\/MSGHubIntenalData.swift",
+      "kind": "StringLiteral",
+      "offset": 412,
+      "length": 38,
+      "value": "\"https:\/\/push.msghub.cloud\/v1\/device\/\""
+    },
+    {
+      "filePath": "\/Users\/pavelpavlov\/XCodeProjects\/MSGHubInternal\/MSGHubInternal\/MSGHubIntenalData.swift",
+      "kind": "StringLiteral",
+      "offset": 488,
+      "length": 3,
+      "value": "\"_\""
+    },
+    {
+      "filePath": "\/Users\/pavelpavlov\/XCodeProjects\/MSGHubInternal\/MSGHubInternal\/MSGHubIntenalData.swift",
+      "kind": "StringLiteral",
+      "offset": 528,
+      "length": 10,
+      "value": "\"bundleId\""
+    },
+    {
+      "filePath": "\/Users\/pavelpavlov\/XCodeProjects\/MSGHubInternal\/MSGHubInternal\/MSGHubIntenalData.swift",
+      "kind": "StringLiteral",
+      "offset": 569,
+      "length": 6,
+      "value": "\"uuid\""
+    },
+    {
+      "filePath": "\/Users\/pavelpavlov\/XCodeProjects\/MSGHubInternal\/MSGHubInternal\/MSGHubIntenalData.swift",
+      "kind": "StringLiteral",
+      "offset": 613,
+      "length": 14,
+      "value": "\"device_token\""
+    },
+    {
+      "filePath": "\/Users\/pavelpavlov\/XCodeProjects\/MSGHubInternal\/MSGHubInternal\/MSGHubIntenalData.swift",
+      "kind": "StringLiteral",
+      "offset": 667,
+      "length": 13,
+      "value": "\"app_package\""
+    },
+    {
+      "filePath": "\/Users\/pavelpavlov\/XCodeProjects\/MSGHubInternal\/MSGHubInternal\/MSGHubIntenalData.swift",
+      "kind": "StringLiteral",
+      "offset": 718,
+      "length": 14,
+      "value": "\"device_model\""
+    },
+    {
+      "filePath": "\/Users\/pavelpavlov\/XCodeProjects\/MSGHubInternal\/MSGHubInternal\/MSGHubIntenalData.swift",
+      "kind": "StringLiteral",
+      "offset": 767,
+      "length": 16,
+      "value": "\"device_os_name\""
+    },
+    {
+      "filePath": "\/Users\/pavelpavlov\/XCodeProjects\/MSGHubInternal\/MSGHubInternal\/MSGHubIntenalData.swift",
+      "kind": "StringLiteral",
+      "offset": 818,
+      "length": 19,
+      "value": "\"device_os_version\""
+    },
+    {
+      "filePath": "\/Users\/pavelpavlov\/XCodeProjects\/MSGHubInternal\/MSGHubInternal\/MSGHubIntenalData.swift",
+      "kind": "StringLiteral",
+      "offset": 876,
+      "length": 11,
+      "value": "\"X-Api-Key\""
+    },
+    {
+      "filePath": "\/Users\/pavelpavlov\/XCodeProjects\/MSGHubInternal\/MSGHubInternal\/MSGHubIntenalData.swift",
+      "kind": "StringLiteral",
+      "offset": 921,
+      "length": 38,
+      "value": "\"2fdfde70-cd2c-4071-8195-efcc85c8946a\""
+    },
+    {
+      "filePath": "\/Users\/pavelpavlov\/XCodeProjects\/MSGHubInternal\/MSGHubInternal\/MSGHubIntenalData.swift",
+      "kind": "StringLiteral",
+      "offset": 998,
+      "length": 8,
+      "value": "\"status\""
+    },
+    {
+      "filePath": "\/Users\/pavelpavlov\/XCodeProjects\/MSGHubInternal\/MSGHubInternal\/MSGHubIntenalData.swift",
+      "kind": "StringLiteral",
+      "offset": 1041,
+      "length": 11,
+      "value": "\"timestamp\""
+    },
+    {
+      "filePath": "\/Users\/pavelpavlov\/XCodeProjects\/MSGHubInternal\/MSGHubInternal\/MSGHubIntenalData.swift",
+      "kind": "StringLiteral",
+      "offset": 1095,
+      "length": 8,
+      "value": "\"msg_id\""
+    },
+    {
+      "filePath": "\/Users\/pavelpavlov\/XCodeProjects\/MSGHubInternal\/MSGHubInternal\/MSGHubIntenalData.swift",
+      "kind": "StringLiteral",
+      "offset": 1139,
+      "length": 5,
+      "value": "\"uid\""
+    },
+    {
+      "filePath": "\/Users\/pavelpavlov\/XCodeProjects\/MSGHubInternal\/MSGHubInternal\/MSGHubIntenalData.swift",
+      "kind": "StringLiteral",
+      "offset": 1177,
+      "length": 11,
+      "value": "\"fcm_token\""
+    },
+    {
+      "filePath": "\/Users\/pavelpavlov\/XCodeProjects\/MSGHubInternal\/MSGHubInternal\/MSGHubIntenalData.swift",
+      "kind": "StringLiteral",
+      "offset": 1217,
+      "length": 7,
+      "value": "\"token\""
+    },
+    {
+      "filePath": "\/Users\/pavelpavlov\/XCodeProjects\/MSGHubInternal\/MSGHubInternal\/MSGHubIntenalData.swift",
+      "kind": "StringLiteral",
+      "offset": 1260,
+      "length": 14,
+      "value": "\"redirect_url\""
+    },
+    {
+      "filePath": "\/Users\/pavelpavlov\/XCodeProjects\/MSGHubInternal\/MSGHubInternal\/MSGHubIntenalData.swift",
+      "kind": "StringLiteral",
+      "offset": 1313,
+      "length": 31,
+      "value": "\"MSGHubNotificationsIdentifier\""
+    },
+    {
+      "filePath": "\/Users\/pavelpavlov\/XCodeProjects\/MSGHubInternal\/MSGHubInternal\/MSGHubIntenalData.swift",
+      "kind": "StringLiteral",
+      "offset": 1371,
+      "length": 5,
+      "value": "\"iOS\""
+    }
+  ]
+}
