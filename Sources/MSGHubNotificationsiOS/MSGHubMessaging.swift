@@ -38,7 +38,7 @@ open class MSGHubMessaging: NSObject, MessagingDelegate, UNUserNotificationCente
         if #available(iOS 10.0, *) {
             UNUserNotificationCenter.current().delegate = self
             let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
-            UNUserNotificationCenter.current().requestAuthorization( options: authOptions, completionHandler: {_, _ in })
+            UNUserNotificationCenter.current().requestAuthorization(options: authOptions) { _, _ in }
         } else {
             let settings: UIUserNotificationSettings = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
             application.registerUserNotificationSettings(settings)
@@ -50,19 +50,31 @@ open class MSGHubMessaging: NSObject, MessagingDelegate, UNUserNotificationCente
         application.registerForRemoteNotifications()
         
         subscribe(toTopic: getBundleId() + msgHubInternal.IOS_ID)
-        
     }
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        setApnsToken(token: deviceToken)
+        Messaging.messaging().apnsToken = deviceToken
     }
     
-    public func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification,  withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+    public func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
+        let tokenToUse = fcmToken ?? ""
+        
+        let dataDict: [String: String] = [msgHubInternal.token: tokenToUse]
+        NotificationCenter.default.post(name: Notification.Name("FCMToken"), object: nil, userInfo: dataDict)
+        
+        putValue(key: msgHubInternal.fcm_token, value: tokenToUse)
+        
+        subscribe(toTopic: getDeviceUUID())
+    }
+    
+    public func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                       willPresent notification: UNNotification,
+                                       withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         
         let userInfo = notification.request.content.userInfo
         
         if let msgID = userInfo[msgHubInternal.json_key_message_id] {
-            sendNotidficationDLR(messageID: msgID as? String ?? "", action: 0)
+            sendNotificationDLR(messageID: msgID as? String ?? "", action: 0)
         }
         
         print(userInfo)
@@ -74,98 +86,59 @@ open class MSGHubMessaging: NSObject, MessagingDelegate, UNUserNotificationCente
         }
     }
     
-    public func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+    public func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                       didReceive response: UNNotificationResponse,
+                                       withCompletionHandler completionHandler: @escaping () -> Void) {
         
         let userInfo = response.notification.request.content.userInfo
         
         if let msgID = userInfo[msgHubInternal.json_key_message_id] {
-            sendNotidficationDLR(messageID: msgID as? String ?? "", action: 1)
+            sendNotificationDLR(messageID: msgID as? String ?? "", action: 1)
         }
         
-        if let redirectUrl = userInfo[msgHubInternal.redirect_url] as? String {
+        if let redirectUrl = userInfo[msgHubInternal.redirect_url] as? String,
+           let encodedUrl = redirectUrl.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
+           let url = URL(string: encodedUrl) {
             
-            if let encodedUrl = redirectUrl.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) {
-                
-                guard let url = URL(string: encodedUrl) else {
-                    return
-                }
-                
-                if shouldOpenUrlExternal() {
-                    UIApplication.shared.open(url)
-                } else {
-                    self.redirectProtocol?.onExternalNotificationUrl(url: url)
-                }
-                
+            if shouldOpenUrlExternal() {
+                UIApplication.shared.open(url)
+            } else {
+                self.redirectProtocol?.onExternalNotificationUrl(url: url)
             }
-            
-        }
-        
-        if response.actionIdentifier == UNNotificationDismissActionIdentifier {
-            // notification dissmissed (no adequate results from testing)
         }
         
         print(response)
-        
         completionHandler()
     }
     
-    public func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
-        
-        let dataDict:[String: String] = [msgHubInternal.token: fcmToken ?? ""]
-        NotificationCenter.default.post(name: Notification.Name("FCMToken"), object: nil, userInfo: dataDict)
-        
-        subscribe(toTopic: getDeviceUUID())
-    }
-    
     public func subscribe(toTopic: String) {
-        if (toTopic.isEmpty) {return}
+        guard !toTopic.isEmpty else { return }
         Messaging.messaging().subscribe(toTopic: toTopic) { error in
             self.registerForRemoteNotifications()
         }
     }
     
     public func unsubscribe(fromTopic: String) {
-        if (fromTopic.isEmpty) {return}
+        guard !fromTopic.isEmpty else { return }
         Messaging.messaging().unsubscribe(fromTopic: fromTopic) { error in
             self.registerForRemoteNotifications()
         }
     }
     
-    private func updateFCMToken() {
-        Messaging.messaging().token { token, error in
-            if error != nil {
-                //ignored
-            } else if let token = token {
-                self.putValue(key: self.msgHubInternal.fcm_token, value: token)
-            }
-        }
-    }
-    
     private func getFcmToken() -> String {
-        if self.getValue(key: msgHubInternal.fcm_token) == nil {
-            return ""
-        }
-        return self.getValue(key: msgHubInternal.fcm_token)!
-    }
-    
-    public func setApnsToken(token: Data) {
-        Messaging.messaging().apnsToken = token
-        updateFCMToken()
+        return self.getValue(key: msgHubInternal.fcm_token) ?? ""
     }
     
     public func getDeviceUUID() -> String {
         if self.getValue(key: msgHubInternal.key_uid) == nil {
             self.putValue(key: msgHubInternal.key_uid, value: getBundleId() + "_" + UUID().uuidString)
         }
-        
         return self.getValue(key: msgHubInternal.key_uid)!
     }
     
     public func setDeviceUUID(uuid: String) {
         unsubscribe(fromTopic: getDeviceUUID())
-        
         self.putValue(key: msgHubInternal.key_uid, value: getBundleId() + "_" + uuid)
-        
         subscribe(toTopic: getBundleId() + msgHubInternal.uuid_delimiter + uuid)
     }
     
@@ -177,12 +150,10 @@ open class MSGHubMessaging: NSObject, MessagingDelegate, UNUserNotificationCente
         if self.getValue(key: msgHubInternal.key_bundle_id) == nil {
             self.putValue(key: msgHubInternal.key_bundle_id, value: self.bundleId)
         }
-        
         return self.getValue(key: msgHubInternal.key_bundle_id)!
     }
     
     private func registerForRemoteNotifications() {
-        
         let params = [
             msgHubInternal.json_key_token: getFcmToken(),
             msgHubInternal.json_key_package: getBundleId(),
@@ -192,34 +163,33 @@ open class MSGHubMessaging: NSObject, MessagingDelegate, UNUserNotificationCente
         ]
         
         AF.request(msgHubInternal.register_device_endpoing + getDeviceUUID(),
-                   method: HTTPMethod.post,
+                   method: .post,
                    parameters: params,
                    encoder: JSONParameterEncoder.default,
-                   headers: [msgHubInternal.header_key_tera: msgHubInternal.auth_token, "Content-Type": "application/json; charset=utf-8"])
-            .responseJSON { response in
-                //ignored
+                   headers: [msgHubInternal.header_key_tera: msgHubInternal.auth_token,
+                             "Content-Type": "application/json; charset=utf-8"])
+            .responseJSON { _ in
+                // ignored
             }
-        
     }
     
-    private func sendNotidficationDLR(messageID: String, action: Int) { //0 - received | 1 - opened
-        
+    private func sendNotificationDLR(messageID: String, action: Int) {
         let timestamp = String(NSDate().timeIntervalSince1970)
         
         let params = [
             msgHubInternal.json_key_status: String(action),
-            msgHubInternal.json_key_ts: String(timestamp),
+            msgHubInternal.json_key_ts: timestamp,
             msgHubInternal.json_key_message_id: messageID,
             msgHubInternal.json_key_uid: getDeviceUUID()
         ]
         
         AF.request(msgHubInternal.dlr_endpoint,
-                   method: HTTPMethod.post,
+                   method: .post,
                    parameters: params,
                    encoder: JSONParameterEncoder.default,
                    headers: [msgHubInternal.header_key_tera: msgHubInternal.auth_token])
-            .responseJSON { response in
-                //ignored
+            .responseJSON { _ in
+                // ignored
             }
     }
     
@@ -228,38 +198,26 @@ open class MSGHubMessaging: NSObject, MessagingDelegate, UNUserNotificationCente
     }
     
     private func shouldOpenUrlExternal() -> Bool {
-        if self.getBoolean(key: "open_external") == nil {
-            return false
-        }
-        return self.getBoolean(key: "open_external")!
+        return self.getBoolean(key: "open_external") ?? false
     }
     
     private func getValue(key: String) -> String? {
-        let preferences = UserDefaults.standard
-        if preferences.string(forKey: key) == nil {
-            return nil
-        } else {
-            return preferences.string(forKey: key)
-        }
+        return UserDefaults.standard.string(forKey: key)
     }
     
     private func putValue(key: String, value: String) {
-        let preferences = UserDefaults.standard
-        preferences.set(value, forKey: key)
+        UserDefaults.standard.set(value, forKey: key)
     }
     
     private func putBoolean(key: String, value: Bool?) {
-        let preferences = UserDefaults.standard
-        preferences.set(value, forKey: key)
+        UserDefaults.standard.set(value, forKey: key)
     }
     
     private func getBoolean(key: String) -> Bool? {
-        let preferences = UserDefaults.standard
-        return preferences.bool(forKey: key) == false ? false : preferences.bool(forKey: key)
+        return UserDefaults.standard.bool(forKey: key)
     }
-    
 }
 
-public protocol RedirectProtocol : NSObjectProtocol {
+public protocol RedirectProtocol: NSObjectProtocol {
     func onExternalNotificationUrl(url: URL)
 }
